@@ -1,3 +1,7 @@
 torch>=1.9.0
-numpy
+numpy>=1.22,<2.0
 matplotlib
+opencv-python          # for image capture and CV utilities
+torchvision            # for pretrained detectors
+Pillow                 # for image I/O
+timm                   # required by MiDaS depth model

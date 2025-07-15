@@ -1,0 +1,16 @@
+name: ebcm
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - cpuonly           # CPU‐only PyTorch build
+  - numpy=1.23        # pin <2.0
+  - matplotlib
+  - opencv
+  - pillow
+  - pip               # include pip so you can still install pip-only packages
+  - pip:
+    - -r requirements.txt   # if you still need any pure-pip packages
